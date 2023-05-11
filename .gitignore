@@ -1,1 +1,6 @@
-
+#Output c files
+*.o
+*.d
+*.elf
+*.map
+*.hex

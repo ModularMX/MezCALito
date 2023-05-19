@@ -1,8 +1,12 @@
-all :
-	arm-none-eabi-gcc -c -mcpu=cortex-m0plus -O0 -Wall -o main.o main.c
-	arm-none-eabi-gcc -c -mcpu=cortex-m0plus -O0 -Wall -o startup.o startup.c
-	arm-none-eabi-gcc main.o startup.o -mcpu=cortex-m0plus -T linker.ld -nostdlib -o main.elf
-	arm-none-eabi-objcopy -O ihex main.elf main.hex
+# front end maek targets, there is a problem with meson, we need to type quiet long lines in our 
+# terminal if we want to compiler or rebuild, but with make we can simplify to up to two words
 
-make flash:
-	openocd -f board/st_nucleo_g0.cfg -c "program main.hex verify reset" -c shutdown
+# build project
+all :
+	meson compile -C build
+# remove binaries
+clean :
+	meson setup --wipe build
+# flash binaries into the mcu
+flash:
+	meson compile -C build flash

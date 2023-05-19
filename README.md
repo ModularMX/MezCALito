@@ -19,3 +19,23 @@ To-Do List:
 - Split the project into multiple repositories, as this is definitely something that must be done. For now, we will start with one repository.
 - Add support for various architectures and compilers.
 
+
+Tools
+-----
+
+**Build system**
+
+-[meson](https://github.com/mesonbuild/meson), [ninja](https://github.com/ninja-build/ninja)
+
+
+```bash
+sudo pacman -S make
+python -m pip install meson
+python -m pip install ninja
+```
+
+**Compiler**
+
+```bash
+sudo pacman -S arm-none-eabi-gcc
+```

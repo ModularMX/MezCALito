@@ -25,7 +25,7 @@ Tools
 
 **Build system**
 
--[meson](https://github.com/mesonbuild/meson), [ninja](https://github.com/ninja-build/ninja)
+- [meson](https://github.com/mesonbuild/meson), [ninja](https://github.com/ninja-build/ninja)
 
 
 ```bash
@@ -38,4 +38,12 @@ python -m pip install ninja
 
 ```bash
 sudo pacman -S arm-none-eabi-gcc
+```
+
+**Dcumentation**
+
+```bash
+python -m pip install sphinx
+python -m pip install sphinx-needs  
+python -m pip install sphinxcontrib-plantuml
 ```

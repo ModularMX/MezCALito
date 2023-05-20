@@ -4,9 +4,16 @@
 # build project
 all :
 	meson compile -C build
+
+.PHONY : clean docs flash
+
 # remove binaries
 clean :
 	meson setup --wipe build
 # flash binaries into the mcu
-flash:
+docs :
+	meson compile -C build docs
+	firefox build/sphinx/index.html
+# flash binaries into the mcu
+flash :
 	meson compile -C build flash

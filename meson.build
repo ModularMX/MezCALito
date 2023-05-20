@@ -54,6 +54,13 @@ size = custom_target( 'size',
     build_by_default : true
 )
 
+# generate html documentation like requirements, detail design, api docs, etc..
+# $ meson compile -C build docs
+run_target(
+    'docs',
+    command : ['sphinx-build', '-b', 'html', '../docs', 'sphinx', '-c', '../', '-W']
+)
+
 # flash the board using openocd
 # $ meson compile -C build flash
 run_target(

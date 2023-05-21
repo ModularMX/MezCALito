@@ -8,3 +8,5 @@ more specifically in the stm32g0b1re, a device that can be found in the Nucleo-G
     :maxdepth: 1
     :caption: Contents:
 
+    requirements
+

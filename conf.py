@@ -61,19 +61,25 @@ needs_id_required = True
 # This option mostly affects the roles need_outgoing and need_incoming by showing the title beside the 
 # ID of the linked need. Can be combined with needs_show_link_type. Activate it by setting it on True 
 # in your conf.py:
-needs_show_link_title = True
+needs_show_link_title = False
+
 # Defines a set of valid statuses, which are allowed to be used inside documentation. If we detect a 
 # status not defined, an error is thrown and the build stops. The checks are case sensitive.
 needs_statuses = [
     dict(name="open", description="Nothing done yet"),
+    dict(name="draft", description="it is not valid for development yet"),
     dict(name="in progress", description="Someone is working on it"),
     dict(name="implemented", description="Work is done and implemented")
 ]
 # Defines a set of valid tags, which are allowed to be used inside documentation. If we detect a tag not 
 # defined, an error is thrown and the build stops. The checks are case sensitive.
 needs_tags = [
+    dict(name="autosar", description="main autosar requirements"),
     dict(name="bsw", description="basic software modules (mcal layer)")
 ]
+# Defines a regular expression used to validate all manually set IDs and to generate valid IDs for 
+# needs without a given ID. Default value: ^[A-Z0-9_]{5,}
+needs_id_regex = '^[a-zA-Z0-9_]{5,}'
 
 # $ sphinx-build -b html docs Build/sphinx/_build -c ./ -W
 # $ firefox build/sphinx/index.html

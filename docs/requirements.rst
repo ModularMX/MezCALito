@@ -7,3 +7,4 @@ AUTOSAR requirements
 
     requirements/project-objectives
     requirements/main-requirements
+    requirements/general-requirements-on-basic-software-modules

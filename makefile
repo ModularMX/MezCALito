@@ -3,6 +3,7 @@
 
 # build project
 all :
+	ninja -C build clang-format
 	meson compile -C build
 
 .PHONY : clean docs flash

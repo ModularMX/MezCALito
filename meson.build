@@ -35,7 +35,11 @@ main = executable( name,
         c_link_args, 
         '-T@0@/@1@'.format(meson.current_source_dir(), linker),
         '-Wl,-Map=@0@.map'.format(name) 
-        ]
+        ],
+    include_directories : [ 
+        'autosar',
+        'autosar/mcal'
+    ]
 )
 
 # to generate the hex file

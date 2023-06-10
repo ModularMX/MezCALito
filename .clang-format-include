@@ -1,0 +1,3 @@
+# files to autoformat clang
+autosar/**/*
+main.c

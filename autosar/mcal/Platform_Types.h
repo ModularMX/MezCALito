@@ -15,7 +15,7 @@
 /**
  * @name   CPU_Types
  * Symbols that specify the CPU type according to its own arquitecture (8, 16, 32 or 64 bits)
- * 
+ *
  * @reqs    SWS_Platform_00045, SWS_Platform_00064
  */
 /**@{*/
@@ -30,7 +30,7 @@
  * @name    Bit_order
  * Symbols to specify the bit order according to the CPU endianess, LSB for little endian and MSB
  * for big endian
- * 
+ *
  * @reqs    SWS_Platform_00038
  */
 /**@{*/
@@ -42,7 +42,7 @@
 /**
  * @name    Byte_order
  * Symbols to specify the endianess types of the CPU
- * 
+ *
  * @reqs    SWS_Platform_00039
  */
 /**@{*/
@@ -55,8 +55,8 @@
  * @name    CPU_Definition
  * Specifies the CPU data and endianess arquitecture. In this case the values correspond to the mcu
  * stm32g0xx wich has a little endian 32 bits CPU
- * 
- * @reqs    SWS_Platform_00046, SWS_Platform_00043, SWS_Platform_00044, SWS_Platform_00048, 
+ *
+ * @reqs    SWS_Platform_00046, SWS_Platform_00043, SWS_Platform_00044, SWS_Platform_00048,
  *          SWS_Platform_00049, SWS_Platform_00050, SWS_Platform_00051, SWS_Platform_00052
  */
 /**@{*/
@@ -68,7 +68,7 @@
 /**
  * @name    boolean_values
  * Symbols to specify true and false values
- * 
+ *
  * @reqs    SWS_Platform_00056, SWS_Platform_00054, SWS_Platform_00055
  */
 /**@{*/
@@ -85,8 +85,8 @@
  * @name    unsigned_types
  * Cross platform type definitions to declare unsigned integer variables of  8, 16, 32, 64 and
  * boolean values
- * 
- * @reqs    SWS_Platform_00027, SWS_Platform_00034, SWS_Platform_00026, SWS_Platform_00013, 
+ *
+ * @reqs    SWS_Platform_00027, SWS_Platform_00034, SWS_Platform_00026, SWS_Platform_00013,
  *          SWS_Platform_00014, SWS_Platform_00015, SWS_Platform_00066
  */
 /**@{*/
@@ -105,7 +105,7 @@ typedef unsigned long long uint64; /*!< standar type to declare eight byte varia
 /**
  * @name    signed_types
  * Cross platform type definitions to declare signed integer variables of  8, 16, 32 and 64 values
- * 
+ *
  * @reqs    SWS_Platform_00016, SWS_Platform_00017, SWS_Platform_00018, SWS_Platform_00067
  */
 /**@{*/
@@ -123,39 +123,39 @@ typedef signed long long sint64; /*!< standar type to declare eight byte variabl
 /**
  * @name    unsigned_least
  * Cross platform type definitions to declare max or min ranges of unsigned 8, 16 and 32 values
- * 
+ *
  * @reqs    SWS_Platform_00020, SWS_Platform_00021, SWS_Platform_00022
  */
 /**@{*/
-typedef unsigned long uint8_least;   /*!< standar type to declare max or min ranges for an unsigned
-                                        one byte variable */
+typedef unsigned long uint8_least;  /*!< standar type to declare max or min ranges for an unsigned
+                                       one byte variable */
 typedef unsigned long uint16_least; /*!< standar type to declare max or min ranges for an unsigned
                                         two byte variable */
-typedef unsigned long uint32_least;  /*!< standar type to declare max or min ranges for an unsigned
-                                        four byte variable */
+typedef unsigned long uint32_least; /*!< standar type to declare max or min ranges for an unsigned
+                                       four byte variable */
 /**@}*/
 
 
 /**
  * @name    signed_least
  * Cross platform type definitions to declare max or min ranges of signed 8, 16 and 32 values
- * 
+ *
  * @reqs    SWS_Platform_00023, SWS_Platform_00024, SWS_Platform_00025
  */
 /**@{*/
-typedef signed long sint8_least;   /*!< standar type to declare max or min ranges for a signed one
-                                    byte variable */
+typedef signed long sint8_least;  /*!< standar type to declare max or min ranges for a signed one
+                                   byte variable */
 typedef signed long sint16_least; /*!< standar type to declare max or min ranges for a signed two
                                     byte variable */
-typedef signed long sint32_least;  /*!< standar type to declare max or min ranges for a signed four
-                                    byte variable */
+typedef signed long sint32_least; /*!< standar type to declare max or min ranges for a signed four
+                                   byte variable */
 /**@}*/
 
 
 /**
  * @name    floating_point
  * Cross platform type definitions to declare floating point variables of single and double presicion
- * 
+ *
  * @reqs    SWS_Platform_00041, SWS_Platform_00042
  */
 /**@{*/
@@ -169,7 +169,7 @@ typedef double float64; /*!< standar type to declare double precision floating p
 /**
  * @name    void_pointers
  * Cross platform type definitions to declare void pointers
- * 
+ *
  * @reqs    SWS_Platform_91001, SWS_Platform_91002
  */
 /**@{*/

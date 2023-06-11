@@ -388,6 +388,50 @@ transformer chain for which the data type represents the transformer status.
     :links: SRS_BSW_00305
 
     +-------------------+-----------------------------------------------------------------------------+
+    | **Name**          | Std_MessageTypeType                                                         |
+    +-------------------+-----------------------------------------------------------------------------+
+    | **Kind**          | Type                                                                        |
+    +-------------------+-----------------------------------------------------------------------------+
+    | **Derived from**  | uint8                                                                       |
+    +-------------------+--------------------------+------+-------------------------------------------+
+    | **Range**         | STD_MESSAGETYPE_REQUEST  | 0x00 | Message type for a request message        |
+    |                   +--------------------------+------+-------------------------------------------+
+    |                   | STD_MESSAGETYPE_RESPONSE | 0x01 | Message type for a response message       |
+    |                   +--------------------------+------+-------------------------------------------+
+    |                   | 0x02-0x3F                | 0x02 | Reserverd for future message type         |
+    +-------------------+--------------------------+------+-------------------------------------------+
+    | **Description**   | This type is used to encode the different type of messages. - Currently this| 
+    |                   | encoding is limited to the distinction between requests and responses in    | 
+    |                   | C/S communication                                                           |
+    +-------------------+-----------------------------------------------------------------------------+
+    | **Available via** | Std_Types.h                                                                 |
+    +-------------------+-----------------------------------------------------------------------------+
+
+
+.. req:: None
+    :id: SWS_Std_00017
+    :status: open
+    :tags: bsw
+    :links: SRS_BSW_00305
+
+    The Std_MessageTypeType shall be used ot encode the different types of messages exchanged in 
+    AUTOSAR. - Currently this encoding is limited to the distinction between requests and responses 
+    in C/S communication.c(SRS_BSW_00305)
+
+    Note: In future AUTOSAR release, the literals for this type may be extended with additional message 
+    types.
+
+
+8.1.6 Std_MessageResultType
+"""""""""""""""""""""""""""
+
+.. req:: None
+    :id: SWS_Std_91002
+    :status: open
+    :tags: bsw
+    :links: SRS_BSW_00305
+
+    +-------------------+-----------------------------------------------------------------------------+
     | **Name**          | Std_MessageResultType                                                       |
     +-------------------+-----------------------------------------------------------------------------+
     | **Kind**          | Type                                                                        |

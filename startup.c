@@ -1,4 +1,4 @@
-#include "Platform_Types.h"
+#include "Std_Types.h"
 
 /*external reference varibales form linker scripts*/
 extern uint8 __stack_init;    /*stack init address*/

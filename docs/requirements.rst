@@ -10,3 +10,4 @@ AUTOSAR requirements
     requirements/general-requirements-on-basic-software-modules
     requirements/specification-of-platform-types
     requirements/specification-of-standard-types
+    requirements/requirements-on-libraries

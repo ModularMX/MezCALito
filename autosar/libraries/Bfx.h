@@ -15,5 +15,6 @@
 #define BFX_H
 
 #include "Bfx_8bits.h"
+#include "Bfx_16bits.h"
 
 #endif /* BFX_H */

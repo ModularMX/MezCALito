@@ -755,8 +755,6 @@ The functions described in this library may be realized as regular functions or 
     +--------------+-------------------------------------------------------+
     | **Function** | **Function prototype**                                |
     | **ID[hex]**  |                                                       |
-    |              |                                                       | 
-    |              |                                                       |
     +--------------+-------------------------------------------------------+
     | **0x02A**    | void Bfx_SetBitMask_u8u8(uint8*, uint8)               |
     +--------------+-------------------------------------------------------+
@@ -832,8 +830,6 @@ The functions described in this library may be realized as regular functions or 
     +--------------+-------------------------------------------------------+
     | **Function** | **Function prototype**                                |
     | **ID[hex]**  |                                                       |
-    |              |                                                       | 
-    |              |                                                       |
     +--------------+-------------------------------------------------------+
     | **0x030**    | void Bfx_ClrBitMask_u8u8(uint8*, uint8)               |
     +--------------+-------------------------------------------------------+
@@ -915,8 +911,6 @@ The functions described in this library may be realized as regular functions or 
     +--------------+-------------------------------------------------------+
     | **Function** | **Function prototype**                                |
     | **ID[hex]**  |                                                       |
-    |              |                                                       | 
-    |              |                                                       |
     +--------------+-------------------------------------------------------+
     | **0x036**    | boolean Bfx_TstBitMask_u8u8_u8(uint8,uint8)           |
     +--------------+-------------------------------------------------------+
@@ -980,8 +974,6 @@ The functions described in this library may be realized as regular functions or 
     +--------------+-------------------------------------------------------+
     | **Function** | **Function prototype**                                |
     | **ID[hex]**  |                                                       |
-    |              |                                                       | 
-    |              |                                                       |
     +--------------+-------------------------------------------------------+
     | **0x03A**    | boolean Bfx_TstBitLnMask_u8u8_u8(uint8,uint8)         |
     +--------------+-------------------------------------------------------+
@@ -1041,8 +1033,6 @@ The functions described in this library may be realized as regular functions or 
     +--------------+-------------------------------------------------------+
     | **Function** | **Function prototype**                                |
     | **ID[hex]**  |                                                       |
-    |              |                                                       | 
-    |              |                                                       |
     +--------------+-------------------------------------------------------+
     | **0x040**    | boolean Bfx_TstParityEven_u8_u8(uint8)                |
     +--------------+-------------------------------------------------------+
@@ -1101,8 +1091,6 @@ The functions described in this library may be realized as regular functions or 
     +--------------+-------------------------------------------------------+
     | **Function** | **Function prototype**                                |
     | **ID[hex]**  |                                                       |
-    |              |                                                       | 
-    |              |                                                       |
     +--------------+-------------------------------------------------------+
     | **0x046**    | void Bfx_ToggleBits_u8(uint8*)                        |
     +--------------+-------------------------------------------------------+
@@ -1163,8 +1151,6 @@ The functions described in this library may be realized as regular functions or 
     +--------------+-------------------------------------------------------+
     | **Function** | **Function prototype**                                |
     | **ID[hex]**  |                                                       |
-    |              |                                                       | 
-    |              |                                                       |
     +--------------+-------------------------------------------------------+
     | **0x04A**    | void Bfx_ToggleBitMask_u8u8(uint8*, uint8)            |
     +--------------+-------------------------------------------------------+
@@ -1228,7 +1214,6 @@ The functions described in this library may be realized as regular functions or 
     | **Function** | **Function prototype**                                | **Maximum**  |
     | **ID[hex]**  |                                                       | **value of** |
     |              |                                                       | **ShiftCnt** |
-    |              |                                                       |              |
     +--------------+-------------------------------------------------------+--------------+
     | **0x050**    | void Bfx_ShiftBitRt_u8u8(uint8*, uint8)               | 7            |
     +--------------+-------------------------------------------------------+--------------+
@@ -1292,7 +1277,6 @@ The functions described in this library may be realized as regular functions or 
     | **Function** | **Function prototype**                                | **Maximum**  |
     | **ID[hex]**  |                                                       | **value of** |
     |              |                                                       | **ShiftCnt** |
-    |              |                                                       |              |
     +--------------+-------------------------------------------------------+--------------+
     | **0x056**    | void Bfx_ShiftBitLt_u8u8(uint8*, uint8)               | 7            |
     +--------------+-------------------------------------------------------+--------------+
@@ -1367,7 +1351,6 @@ The functions described in this library may be realized as regular functions or 
     | **Function** | **Function prototype**                                | **Maximum**  |
     | **ID[hex]**  |                                                       | **value of** |
     |              |                                                       | **ShiftCnt** |
-    |              |                                                       |              |
     +--------------+-------------------------------------------------------+--------------+
     | **0x05A**    | void Bfx_RotBitRt_u8u8(uint8*, uint8)                 | 7            |
     +--------------+-------------------------------------------------------+--------------+
@@ -1442,7 +1425,6 @@ The functions described in this library may be realized as regular functions or 
     | **Function** | **Function prototype**                                | **Maximum**  |
     | **ID[hex]**  |                                                       | **value of** |
     |              |                                                       | **ShiftCnt** |
-    |              |                                                       |              |
     +--------------+-------------------------------------------------------+--------------+
     | **0x060**    | void Bfx_RotBitLt_u8u8(uint8*, uint8)                 | 7            |
     +--------------+-------------------------------------------------------+--------------+
@@ -1519,7 +1501,6 @@ The functions described in this library may be realized as regular functions or 
     | **Function** | **Function prototype**                                 | **Maximum**  |
     | **ID[hex]**  |                                                        | **value of** |
     |              |                                                        | **ShiftCnt** |
-    |              |                                                        |              |
     +--------------+--------------------------------------------------------+--------------+
     | **0x066**    | void Bfx_CopyBit_u8u8u8u8(uint8*,uint8,uint8,uint8)    | 7            |
     +--------------+--------------------------------------------------------+--------------+
@@ -1667,8 +1648,6 @@ The functions described in this library may be realized as regular functions or 
     +--------------+---------------------------------------------------------+
     | **Function** | **Function prototype**                                  |
     | **ID[hex]**  |                                                         |
-    |              |                                                         | 
-    |              |                                                         |
     +--------------+---------------------------------------------------------+
     | **0x080**    | void Bfx_PutBitsMask_u8u8u8(uint8*, uint8, uint8)       |
     +--------------+---------------------------------------------------------+
@@ -1741,7 +1720,6 @@ The functions described in this library may be realized as regular functions or 
     | **Function** | **Function prototype**                                  | **Maximum**  |
     | **ID[hex]**  |                                                         | **value of** |
     |              |                                                         | **BitPn**    | 
-    |              |                                                         |              |
     +--------------+---------------------------------------------------------+--------------+
     | **0x085**    | void Bfx_PutBit_u8u8u8(uint8*,uint8, boolean)           | 7            |
     +--------------+---------------------------------------------------------+--------------+
@@ -1752,3 +1730,285 @@ The functions described in this library may be realized as regular functions or 
     | **0x088**    | void Bfx_PutBit_u64u8u8(uint64*,uint8, boolean)         | 63           |
     +--------------+---------------------------------------------------------+--------------+
 
+
+8.4.21 Bfx_ShiftBitSat
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. req:: None
+    :id: SWS_Bfx_91002
+    :status: open
+    :tags: bsw
+
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Service Name**      | Bfx_ShiftBitSat_<TypeMn>s8                                              |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Syntax**            | .. code-block:: c                                                       |
+    |                       |                                                                         |
+    |                       |     <Type> Bfx_ShiftBitSat_<TypeMn>s8 (                                 |
+    |                       |          sint8 ShiftCnt,                                                |
+    |                       |          <Type> Data                                                    |
+    |                       |      )                                                                  |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Service ID [hex]**  | 0x100                                                                   |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Sync/Async**        | Synchronous                                                             |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Reentrancy**        | Non Reentrant                                                           |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Parameters(in)**    | ShiftCnt              | Shift count (-<MaxShiftRight> ... -1: right, 1  |
+    |                       |                       | ... <MaxShiftLeft> left)                        |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Parameters(inout)** | Data                  | Input data                                      |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Parameters(out)**   | None                                                                    |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Return value**      | <Type>                | Shifted and saturated bit pattern               |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Description**       | Arithmetic shift with saturation                                        |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Available via**     | Bfx.h                                                                   |
+    +-----------------------+-------------------------------------------------------------------------+
+
+
+.. req:: None
+    :id: SWS_Bfx_00134
+    :status: open
+    :tags: bsw
+
+    If the shift count is greater than or equal to zero, then shift the value in Data by the amount 
+    specified by shift count to left.
+
+    For signed data an arithmetic shift is performed. The vacated bits are filled with zeros and the 
+    result is saturated if its sign bit differs from the sign bits that are shifted out.
+
+    For unsigned data a logical shift is performed. In this case the result is saturated, if the leading 
+    one bit is shifted out.
+
+    If the shift count is less than zero, right-shift the value in Data by the absolute value of the 
+    shift count. The vacated bits are filled with the sign-bit (the most significant bit) and bits 
+    shifted out are discarded.
+
+    Note that a shift right by the word width leaves all zeros or all ones in the result, depending 
+    on the sign-bit.
+
+    Example of 32 bit signed integer: The range for shift count is -32 to +31, allowing a shift left 
+    up to 31 bit positions and a shift right up to 32 bit positions (a shift right by 32 bits leaves 
+    all zeros or all ones in the result, depending on the sign bit).c()
+
+
+.. req:: None
+    :id: SWS_Bfx_00135
+    :status: open
+    :tags: bsw
+    :links: SRS_LIBS_00005, SRS_LIBS_00009, SRS_LIBS_00011
+
+    List of implemented functions
+
+    +--------------+-----------------------------------------------------+-----------+-----------+
+    | **Function** | **Function prototype**                              | **Max**   | **Max**   | 
+    | **ID[hex]**  |                                                     | **Shift** | **Shift** |
+    |              |                                                     | **Left**  | **Right** | 
+    +--------------+-----------------------------------------------------+-----------+-----------+
+    | **0x0F1**    | sint8 Bfx_ShiftBitSat_s8s8_s8(sint8, sint8)         | 8         | 8         |
+    +--------------+-----------------------------------------------------+-----------+-----------+
+    | **0x0F2**    | uint8 Bfx_ShiftBitSat_u8s8_u8(uint8, sint8)         | 8         | 8         |
+    +--------------+-----------------------------------------------------+-----------+-----------+
+    | **0x0F3**    | sint16 Bfx_ShiftBitSat_s16s8_s16(sint16, sint8)     | 16        | 16        |
+    +--------------+-----------------------------------------------------+-----------+-----------+
+    | **0x0F4**    | uint16 Bfx_ShiftBitSat_u16s8_u16(uint16, sint8)     | 16        | 16        |
+    +--------------+-----------------------------------------------------+-----------+-----------+
+    | **0x0F5**    | sint32 Bfx_ShiftBitSat_s32s8_s32(sint32, sint8)     | 31        | 32        |
+    +--------------+-----------------------------------------------------+-----------+-----------+
+    | **0x0F6**    | uint32 Bfx_ShiftBitSat_u32s8_u32(uint32, sint8)     | 31        | 32        |
+    +--------------+-----------------------------------------------------+-----------+-----------+
+    | **0x0F7**    | sint64 Bfx_ShiftBitSat_s64s8_s64(sint64, sint8)     | 63        | 64        |
+    +--------------+-----------------------------------------------------+-----------+-----------+
+    | **0x0F8**    | uint64 Bfx_ShiftBitSat_u64s8_u64(uint64, sint8)     | 63        | 64        |
+    +--------------+-----------------------------------------------------+-----------+-----------+
+
+
+8.4.22 Bfx_CountLeadingOnes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. req:: None
+    :id: SWS_Bfx_91003
+    :status: open
+    :tags: bsw
+
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Service Name**      | Bfx_CountLeadingOnes_<TypeMn>                                           |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Syntax**            | .. code-block:: c                                                       |
+    |                       |                                                                         |
+    |                       |     uint8 Bfx_CountLeadingOnes_<TypeMn> (                               |
+    |                       |          <Type> Data                                                    |
+    |                       |      )                                                                  |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Service ID [hex]**  | 0x101                                                                   |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Sync/Async**        | Synchronous                                                             |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Reentrancy**        | Reentrant                                                               |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Parameters(in)**    | Data                  | Input data                                      |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Parameters(inout)** | None                                                                    |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Parameters(out)**   | None                                                                    |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Return value**      | uint8                 | Bit position                                    |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Description**       | Count the number of consecutive ones in Data starting with the most     |
+    |                       | significant bit and return the result.                                  |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Available via**     | Bfx.h                                                                   |
+    +-----------------------+-------------------------------------------------------------------------+
+
+
+.. req:: None
+    :id: SWS_Bfx_00137
+    :status: open
+    :tags: bsw
+    :links: SRS_LIBS_00005, SRS_LIBS_00009, SRS_LIBS_00011
+
+    List of implemented functions
+
+    +--------------+-----------------------------------------------------+------------+
+    | **Function** | **Function prototype**                              | **Max**    | 
+    | **ID[hex]**  |                                                     | **return** |
+    |              |                                                     | **value**  | 
+    +--------------+-----------------------------------------------------+------------+
+    | **0x0F0**    | uint8 Bfx_CountLeadingOnes_u8(uint8)                | 8          |
+    +--------------+-----------------------------------------------------+------------+
+    | **0x0F1**    | uint8 Bfx_CountLeadingOnes_u16(uint16)              | 16         |
+    +--------------+-----------------------------------------------------+------------+
+    | **0x0F2**    | uint8 Bfx_CountLeadingOnes_u32(uint32)              | 32         |
+    +--------------+-----------------------------------------------------+------------+
+    | **0x0F3**    | uint8 Bfx_CountLeadingOnes_u64(uint64)              | 64         |
+    +--------------+-----------------------------------------------------+------------+
+    
+
+8.4.23 Bfx_CountLeadingSigns
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. req:: None
+    :id: SWS_Bfx_91004
+    :status: open
+    :tags: bsw
+
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Service Name**      | Bfx_CountLeadingSigns_<TypeMn>                                          |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Syntax**            | .. code-block:: c                                                       |
+    |                       |                                                                         |
+    |                       |     uint8 Bfx_CountLeadingSigns_<TypeMn> (                              |
+    |                       |          <Type> Data                                                    |
+    |                       |      )                                                                  |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Service ID [hex]**  | 0x102                                                                   |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Sync/Async**        | Synchronous                                                             |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Reentrancy**        | Reentrant                                                               |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Parameters(in)**    | Data                  | Input data                                      |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Parameters(inout)** | None                                                                    |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Parameters(out)**   | None                                                                    |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Return value**      | uint8                 | Bit position                                    |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Description**       | Count the number of consecutive bits which have the same value as most  |
+    |                       | significant bit in Data, starting with bit at position msb minus one.   |
+    |                       | Put the result in Data. It is the number of leading sign bits minus one,| 
+    |                       | giving the number of redundant sign bits in Data                        |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Available via**     | Bfx.h                                                                   |
+    +-----------------------+-------------------------------------------------------------------------+
+
+
+.. req:: None
+    :id: SWS_Bfx_00139
+    :status: open
+    :tags: bsw
+    :links: SRS_LIBS_00005, SRS_LIBS_00009, SRS_LIBS_00011
+
+    List of implemented functions
+
+    +--------------+-----------------------------------------------------+------------+
+    | **Function** | **Function prototype**                              | **Max**    | 
+    | **ID[hex]**  |                                                     | **return** |
+    |              |                                                     | **value**  | 
+    +--------------+-----------------------------------------------------+------------+
+    | **0x0F4**    | uint8 Bfx_CountLeadingSigns_s8(sint8)               | 8          |
+    +-------------+------------------------------------------------------+------------+
+    | **0x0F5**    | uint8 Bfx_CountLeadingSigns_s16(sint16)             | 16         |
+    +--------------+-----------------------------------------------------+------------+
+    | **0x0F6**    | uint8 Bfx_CountLeadingSigns_s32(sint32)             | 32         |
+    +--------------+-----------------------------------------------------+------------+
+    | **0x0F7**    | uint8 Bfx_CountLeadingSigns_s64(sint64)             | 64         |
+    +--------------+-----------------------------------------------------+------------+
+
+
+8.4.24 Bfx_CountLeadingZeros
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. req:: None
+    :id: SWS_Bfx_91005
+    :status: open
+    :tags: bsw
+
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Service Name**      | Bfx_CountLeadingZeros_<TypeMn>                                          |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Syntax**            | .. code-block:: c                                                       |
+    |                       |                                                                         |
+    |                       |     uint8 Bfx_CountLeadingZeros_<TypeMn> (                              |
+    |                       |          <Type> Data                                                    |
+    |                       |      )                                                                  |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Service ID [hex]**  | 0x103                                                                   |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Sync/Async**        | Synchronous                                                             |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Reentrancy**        | Reentrant                                                               |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Parameters(in)**    | Data                  | Input data                                      |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Parameters(inout)** | None                                                                    |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Parameters(out)**   | None                                                                    |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Return value**      | uint8                 | Bit position                                    |
+    +-----------------------+-----------------------+-------------------------------------------------+
+    | **Description**       | Count the number of consecutive zeros in Data starting with the most    |
+    |                       | significant bit and return the result.                                  |
+    +-----------------------+-------------------------------------------------------------------------+
+    | **Available via**     | Bfx.h                                                                   |
+    +-----------------------+-------------------------------------------------------------------------+
+
+
+.. req:: None
+    :id: SWS_Bfx_00141
+    :status: open
+    :tags: bsw
+    :links: SRS_LIBS_00005, SRS_LIBS_00009, SRS_LIBS_00011
+
+    List of implemented functions
+
+    +--------------+-----------------------------------------------------+------------+
+    | **Function** | **Function prototype**                              | **Max**    | 
+    | **ID[hex]**  |                                                     | **return** |
+    |              |                                                     | **value**  | 
+    +--------------+-----------------------------------------------------+------------+
+    | **0x0F8**    | sint8 Bfx_CountLeadingZeros_u8(uint8)               | 8          |
+    +--------------+-----------------------------------------------------+------------+
+    | **0x0F9**    | sint8 Bfx_CountLeadingZeros_u16(uint16)             | 16         |
+    +--------------+-----------------------------------------------------+------------+
+    | **0x0FA**    | sint8 Bfx_CountLeadingZeros_u32(uint32)             | 32         |
+    +--------------+-----------------------------------------------------+------------+
+    | **0x0FB**    | sint8 Bfx_CountLeadingZeros_u64(uint64)             | 64         |
+    +--------------+-----------------------------------------------------+------------+
+
+    

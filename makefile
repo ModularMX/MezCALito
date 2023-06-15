@@ -6,7 +6,7 @@ all :
 	ninja -C build clang-format
 	meson compile -C build
 
-.PHONY : clean docs flash
+.PHONY : clean docs flash utest
 
 # remove binaries
 clean :
@@ -18,3 +18,6 @@ docs :
 # flash binaries into the mcu
 flash :
 	meson compile -C build flash
+# run ceedling unit tests, for some reason we cannot run this from meson
+utest :
+	ceedling gcov:all utils:gcov

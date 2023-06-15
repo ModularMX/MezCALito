@@ -8,6 +8,8 @@
  * Bfx routines specification specifies the functionality, API and the configuration of the AUTOSAR
  * library for BIT functionality dedicated to fixed-point arithmetic routines All bit functions are
  * re-entrant and can handle several simultaneous requests from the application.
+ * 
+ * @reqs    SWS_Bfx_00220, SWS_Bfx_00222, SWS_Bfx_00200, SWS_Bfx_00201
  */
 #ifndef BFX_H
 #define BFX_H

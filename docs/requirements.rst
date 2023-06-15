@@ -11,3 +11,4 @@ AUTOSAR requirements
     requirements/specification-of-platform-types
     requirements/specification-of-standard-types
     requirements/requirements-on-libraries
+    requirements/specification-of-bit-handling-routines

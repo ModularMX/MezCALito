@@ -758,11 +758,11 @@ The functions described in this library may be realized as regular functions or 
     +--------------+-------------------------------------------------------+
     | **0x02A**    | void Bfx_SetBitMask_u8u8(uint8*, uint8)               |
     +--------------+-------------------------------------------------------+
-    | **0x02B**    | void Bfx_SetBitMask_u16u8(uint16*, uint8)             |
+    | **0x02B**    | void Bfx_SetBitMask_u16u16(uint16*, uint16)           |
     +--------------+-------------------------------------------------------+
-    | **0x02C**    | void Bfx_SetBitMask_u32u8(uint32*, uint8)             |
+    | **0x02C**    | void Bfx_SetBitMask_u32u32(uint32*, uint32)           |
     +--------------+-------------------------------------------------------+
-    | **0x02D**    | void Bfx_SetBitMask_u64u8(uint64*, uint8)             |
+    | **0x02D**    | void Bfx_SetBitMask_u64u64(uint64*, uint64)           |
     +--------------+-------------------------------------------------------+
 
    
@@ -833,11 +833,11 @@ The functions described in this library may be realized as regular functions or 
     +--------------+-------------------------------------------------------+
     | **0x030**    | void Bfx_ClrBitMask_u8u8(uint8*, uint8)               |
     +--------------+-------------------------------------------------------+
-    | **0x031**    | void Bfx_ClrBitMask_u16u8(uint16*, uint8)             |
+    | **0x031**    | void Bfx_ClrBitMask_u16u16(uint16*, uint16)           |
     +--------------+-------------------------------------------------------+
-    | **0x032**    | void Bfx_ClrBitMask_u32u8(uint32*, uint8)             |
+    | **0x032**    | void Bfx_ClrBitMask_u32u32(uint32*, uint32)           |
     +--------------+-------------------------------------------------------+
-    | **0x033**    | void Bfx_ClrBitMask_u64u8(uint64*, uint8)             |
+    | **0x033**    | void Bfx_ClrBitMask_u64u64(uint64*, uint64)           |
     +--------------+-------------------------------------------------------+
 
    

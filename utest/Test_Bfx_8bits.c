@@ -558,33 +558,63 @@ void test__Bfx_PutBit_u8u8u8__bit2false( void )
 }
 
 /**
- * @brief   **Test shift to the left 3 bits**
+ * @brief   **Test shift to the left 3 bits saturation**
  *
  * The test validates a shift to the left by 3 bits over a varible with value 0x76, to pass Data
- * should be equal to 0xB0.
+ * should be equal to 0x7F.
  * 
  * @test    SWS_Bfx_91002, SWS_Bfx_00134, SWS_Bfx_00135
  */
-void test__Bfx_ShiftBitSat_s8s8_s8__3leftp( void )
+void test__Bfx_ShiftBitSat_s8s8_s8__3leftp_saturation( void )
 {
     uint8 Shifted;
-    Shifted = Bfx_ShiftBitSat_s8s8_s8( 3, 0x76 );
-    TEST_ASSERT_EQUAL_HEX8_MESSAGE( 0xB0, Shifted, "Value is not 0xB0 as supposed to be" );
+    Shifted = Bfx_ShiftBitSat_s8s8_s8( 0x76, 3 );
+    TEST_ASSERT_EQUAL_HEX8_MESSAGE( 0x7F, Shifted, "Value is not 0x7F as supposed to be" );
 }
 
 /**
- * @brief   **Test negative shift to the left 3 bits**
+ * @brief   **Test shift to the left 3 bits no saturation**
  *
- * The test validates a shift to the left by 3 bits over a signed varible with value 0xE6, to pass Data
+ * The test validates a shift to the left by 3 bits over a varible with value 0x06, to pass Data
  * should be equal to 0x30.
  * 
  * @test    SWS_Bfx_91002, SWS_Bfx_00134, SWS_Bfx_00135
  */
-void test__Bfx_ShiftBitSat_s8s8_s8__3leftn( void )
+void test__Bfx_ShiftBitSat_s8s8_s8__3leftp_nosaturation( void )
 {
     uint8 Shifted;
-    Shifted = Bfx_ShiftBitSat_s8s8_s8( 3, 0xE6 );
+    Shifted = Bfx_ShiftBitSat_s8s8_s8( 0x06, 3 );
     TEST_ASSERT_EQUAL_HEX8_MESSAGE( 0x30, Shifted, "Value is not 0x30 as supposed to be" );
+}
+
+/**
+ * @brief   **Test negative shift to the left 3 bits saturation**
+ *
+ * The test validates a shift to the left by 3 bits over a signed varible with value 0xE6, to pass Data
+ * should be equal to 0x80.
+ * 
+ * @test    SWS_Bfx_91002, SWS_Bfx_00134, SWS_Bfx_00135
+ */
+void test__Bfx_ShiftBitSat_s8s8_s8__3leftn_saturation( void )
+{
+    uint8 Shifted;
+    Shifted = Bfx_ShiftBitSat_s8s8_s8( 0xE6, 3 );
+    TEST_ASSERT_EQUAL_HEX8_MESSAGE( 0x80, Shifted, "Value is not 0x80 as supposed to be" );
+}
+
+/**
+ * @brief   **Test negative shift to the left 3 bits saturation**
+ *
+ * The test validates a shift to the left by 3 bits over a signed varible with value 0xF8, to pass Data
+ * should be equal to 0x80.
+ * 
+ * @test    SWS_Bfx_91002, SWS_Bfx_00134, SWS_Bfx_00135
+ */
+void test__Bfx_ShiftBitSat_s8s8_s8__3leftn_nosaturation( void )
+{
+    uint8 Shifted;
+    Shifted = Bfx_ShiftBitSat_s8s8_s8( 0xF8, 3 );
+    TEST_ASSERT_EQUAL_HEX8_MESSAGE( 0xC0, Shifted, "Value is not 0xC0 as supposed to be" );
 }
 
 /**
@@ -598,7 +628,7 @@ void test__Bfx_ShiftBitSat_s8s8_s8__3leftn( void )
 void test__Bfx_ShiftBitSat_s8s8_s8__3righp( void )
 {
     uint8 Shifted;
-    Shifted = Bfx_ShiftBitSat_s8s8_s8( -3, 0x76 );
+    Shifted = Bfx_ShiftBitSat_s8s8_s8( 0x76, -3 );
     TEST_ASSERT_EQUAL_HEX8_MESSAGE( 0x0E, Shifted, "Value is not 0x0E as supposed to be" );
 }
 
@@ -613,7 +643,7 @@ void test__Bfx_ShiftBitSat_s8s8_s8__3righp( void )
 void test__Bfx_ShiftBitSat_s8s8_s8__3righn( void )
 {
     uint8 Shifted;
-    Shifted = Bfx_ShiftBitSat_s8s8_s8( -3, 0xE6 );
+    Shifted = Bfx_ShiftBitSat_s8s8_s8( 0xE6, -3 );
     TEST_ASSERT_EQUAL_HEX8_MESSAGE( 0xFC, Shifted, "Value is not 0xFC as supposed to be" );
 }
 

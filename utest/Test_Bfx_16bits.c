@@ -1,6 +1,6 @@
 /**
  * @file    Test_Bfx_16bits.c
- * @brief   **Unit Test for the 8 Bit Handling Routines**
+ * @brief   **Unit Test for the 16 Bit Handling Routines**
  *
  * AUTOSAR Library routines are the part of system services in AUTOSAR architecture and below figure
  * shows position of AUTOSAR library in layered architecture.
@@ -660,7 +660,7 @@ void test__Bfx_CountLeadingOnes_u16__3ones( void )
 {
     uint8 Ones;
     Ones = Bfx_CountLeadingOnes_u16( 0xFFE6 );
-    TEST_ASSERT_EQUAL_HEX16_MESSAGE( 11, Ones, "Value is not 3 as supposed to be" );
+    TEST_ASSERT_EQUAL_MESSAGE( 11, Ones, "Value is not 3 as supposed to be" );
 }
 
 /**
@@ -675,7 +675,7 @@ void test__Bfx_CountLeadingSigns_s16__10ones( void )
 {
     uint8 Bits;
     Bits = Bfx_CountLeadingSigns_s16( 0xFFE6 );
-    TEST_ASSERT_EQUAL_HEX16_MESSAGE( 10, Bits, "Value is not 2 as supposed to be" );
+    TEST_ASSERT_EQUAL_MESSAGE( 10, Bits, "Value is not 2 as supposed to be" );
 }
 
 /**
@@ -690,7 +690,7 @@ void test__Bfx_CountLeadingSigns_s16__12zeroes( void )
 {
     uint8 Bits;
     Bits = Bfx_CountLeadingSigns_s16( 0x0006 );
-    TEST_ASSERT_EQUAL_HEX16_MESSAGE( 12, Bits, "Value is not 4 as supposed to be" );
+    TEST_ASSERT_EQUAL_MESSAGE( 12, Bits, "Value is not 4 as supposed to be" );
 }
 
 /**
@@ -705,5 +705,5 @@ void test__Bfx_CountLeadingZeros_u16__11zeroes( void )
 {
     uint8 Zeroes;
     Zeroes = Bfx_CountLeadingZeros_u16( 0x0016 );
-    TEST_ASSERT_EQUAL_HEX16_MESSAGE( 11, Zeroes, "Value is not 3 as supposed to be" );
+    TEST_ASSERT_EQUAL_MESSAGE( 11, Zeroes, "Value is not 3 as supposed to be" );
 }

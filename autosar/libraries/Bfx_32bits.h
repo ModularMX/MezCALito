@@ -8,9 +8,14 @@
  * Bfx routines specification specifies the functionality, API and the configuration of the AUTOSAR
  * library for BIT functionality dedicated to fixed-point arithmetic routines All bit functions are
  * re-entrant and can handle several simultaneous requests from the application.
+ * 
+ * @reqs    SWS_Bfx_00223, SWS_Bfx_00203, SWS_Bfx_00205, SWS_Bfx_00206, SWS_Bfx_00207, SWS_Bfx_00208
+ *          SWS_Bfx_00209, SWS_Bfx_00212, SWS_Bfx_00213, SWS_Bfx_00214,
  */
+#ifndef BFX_32BITS_H
+#define BFX_32BITS_H
+
 #include "Std_Types.h"
-#include "Bfx_32bits.h"
 
 /**
  * @brief **32 bits Set Bit**
@@ -26,6 +31,8 @@
  *
  * @param[inout]  Data Pointer to input data
  * @param[in]  BitPn Bit position
+ * 
+ * @reqs    SWS_Bfx_00001, SWS_Bfx_00002, SWS_Bfx_00008
  */
 void Bfx_SetBit_u32u8( uint32 *Data, uint8 BitPn )
 {
@@ -46,6 +53,8 @@ void Bfx_SetBit_u32u8( uint32 *Data, uint8 BitPn )
  *
  * @param[inout]  Data Pointer to inpur data
  * @param[in]  BitPn Bit position
+ * 
+ * @reqs    SWS_Bfx_00010, SWS_Bfx_00011, SWS_Bfx_00015
  */
 void Bfx_ClrBit_u32u8( uint32 *Data, uint8 BitPn )
 {
@@ -67,6 +76,8 @@ void Bfx_ClrBit_u32u8( uint32 *Data, uint8 BitPn )
  * @param[in] BitPn Bit position
  *
  * @retval Boolean Bit status
+ * 
+ * @reqs    SWS_Bfx_00016, SWS_Bfx_00017, SWS_Bfx_00020
  */
 boolean Bfx_GetBit_u32u8_u8( uint32 Data, uint8 BitPn )
 {
@@ -89,6 +100,8 @@ boolean Bfx_GetBit_u32u8_u8( uint32 Data, uint8 BitPn )
  * @param[in]  BitStartPn Start bit position
  * @param[in]  BitLn Bit field length
  * @param[in]  Status Status value
+ * 
+ * @reqs    SWS_Bfx_00021, SWS_Bfx_00022, SWS_Bfx_00025
  */
 void Bfx_SetBits_u32u8u8u8( uint32 *Data, uint8 BitStartPn, uint8 BitLn, uint8 Status )
 {
@@ -123,6 +136,8 @@ void Bfx_SetBits_u32u8u8u8( uint32 *Data, uint8 BitStartPn, uint8 BitLn, uint8 S
  * @param[in]  BitLn Bit field length
  *
  * @retval uint8 Bit field sequence
+ * 
+ * @reqs    SWS_Bfx_00028, SWS_Bfx_00029, SWS_Bfx_00034
  */
 uint32 Bfx_GetBits_u32u8u8_u32( uint32 Data, uint8 BitStartPn, uint8 BitLn )
 {
@@ -149,6 +164,8 @@ uint32 Bfx_GetBits_u32u8u8_u32( uint32 Data, uint8 BitStartPn, uint8 BitLn )
  *
  * @param[inout] Data Pointer to input Data
  * @param[in] Mask Mask used to set bits
+ * 
+ * @reqs    SWS_Bfx_00035, SWS_Bfx_00036, SWS_Bfx_00038
  */
 void Bfx_SetBitMask_u32u32( uint32 *Data, uint32 Mask )
 {
@@ -170,6 +187,8 @@ void Bfx_SetBitMask_u32u32( uint32 *Data, uint32 Mask )
  *
  * @param[inout] Data Pointer to input Data
  * @param[in] Mask Mask value
+ * 
+ * @reqs    SWS_Bfx_00039, SWS_Bfx_00040, SWS_Bfx_00045
  */
 void Bfx_ClrBitMask_u32u32( uint32 *Data, uint32 Mask )
 {
@@ -192,6 +211,8 @@ void Bfx_ClrBitMask_u32u32( uint32 *Data, uint32 Mask )
  * @param[in] Mask Mask value
  *
  * @retval Boolean Value
+ * 
+ * @reqs    SWS_Bfx_00046, SWS_Bfx_00047, SWS_Bfx_00050
  */
 boolean Bfx_TstBitMask_u32u32_u8( uint32 Data, uint32 Mask )
 {
@@ -214,6 +235,8 @@ boolean Bfx_TstBitMask_u32u32_u8( uint32 Data, uint32 Mask )
  * @param[in] Mask Mask value
  *
  * @retval Boolean Value
+ * 
+ * @reqs    SWS_Bfx_00051, SWS_Bfx_00055
  */
 boolean Bfx_TstBitLnMask_u32u32_u8( uint32 Data, uint32 Mask )
 {
@@ -235,6 +258,8 @@ boolean Bfx_TstBitLnMask_u32u32_u8( uint32 Data, uint32 Mask )
  * @param[in] Data Input Data
  *
  * @retval Boolean Value
+ * 
+ * @reqs    SWS_Bfx_00056, SWS_Bfx_00060
  */
 boolean Bfx_TstParityEven_u32_u8( uint32 Data )
 {
@@ -263,6 +288,8 @@ boolean Bfx_TstParityEven_u32_u8( uint32 Data )
  *      @endcode
  *
  * @param[inout] Data Pointer to input Data
+ * 
+ * @reqs    SWS_Bfx_00061, SWS_Bfx_00065
  */
 void Bfx_ToggleBits_u32( uint32 *Data )
 {
@@ -283,6 +310,8 @@ void Bfx_ToggleBits_u32( uint32 *Data )
  *
  * @param[inout] Data Pointer to input Data
  * @param[in] Mask Mask
+ * 
+ * @reqs    SWS_Bfx_00066, SWS_Bfx_00069
  */
 void Bfx_ToggleBitMask_u32u32( uint32 *Data, uint32 Mask )
 {
@@ -305,6 +334,8 @@ void Bfx_ToggleBitMask_u32u32( uint32 *Data, uint32 Mask )
  *
  * @param[inout] Data Pointer to input Data
  * @param[in] ShiftCnt Shift right count
+ * 
+ * @reqs    SWS_Bfx_00070, SWS_Bfx_00075
  */
 void Bfx_ShiftBitRt_u32u8( uint32 *Data, uint8 ShiftCnt )
 {
@@ -327,6 +358,8 @@ void Bfx_ShiftBitRt_u32u8( uint32 *Data, uint8 ShiftCnt )
  *
  * @param[inout] Data Pointer to input Data
  * @param[in] ShiftCnt Shift left count
+ * 
+ * @reqs    SWS_Bfx_00076, SWS_Bfx_00080
  */
 void Bfx_ShiftBitLt_u32u8( uint32 *Data, uint8 ShiftCnt )
 {
@@ -352,6 +385,8 @@ void Bfx_ShiftBitLt_u32u8( uint32 *Data, uint8 ShiftCnt )
  *
  * @param[inout] Data Pointer to input Data
  * @param[in] ShiftCnt Shift right count
+ * 
+ * @reqs    SWS_Bfx_00086, SWS_Bfx_00090
  */
 void Bfx_RotBitRt_u32u8( uint32 *Data, uint8 ShiftCnt )
 {
@@ -377,6 +412,8 @@ void Bfx_RotBitRt_u32u8( uint32 *Data, uint8 ShiftCnt )
  *
  * @param[inout] Data Pointer to input Data
  * @param[in] ShiftCnt Shift left count
+ * 
+ * @reqs    SWS_Bfx_00095, SWS_Bfx_00098
  */
 void Bfx_RotBitLt_u32u8( uint32 *Data, uint8 ShiftCnt )
 {
@@ -400,6 +437,8 @@ void Bfx_RotBitLt_u32u8( uint32 *Data, uint8 ShiftCnt )
  * @param[in] DestinationPosition Destination position
  * @param[in] SourceData Source data
  * @param[in] SourcePosition Source position
+ * 
+ * @reqs    SWS_Bfx_00101, SWS_Bfx_00108
  */
 void Bfx_CopyBit_u32u8u32u8( uint32 *DestinationData, uint8 DestinationPosition, uint32 SourceData, uint8 SourcePosition )
 {
@@ -430,6 +469,8 @@ void Bfx_CopyBit_u32u8u32u8( uint32 *DestinationData, uint8 DestinationPosition,
  * @param[in] BitStartPn Start bit position
  * @param[in] BitLn Bit field length
  * @param[in] Pattern Pattern to be set
+ * 
+ * @reqs    SWS_Bfx_00110, SWS_Bfx_00112
  */
 void Bfx_PutBits_u32u8u8u32( uint32 *Data, uint8 BitStartPn, uint8 BitLn, uint32 Pattern )
 {
@@ -455,6 +496,8 @@ void Bfx_PutBits_u32u8u8u32( uint32 *Data, uint8 BitStartPn, uint8 BitLn, uint32
  * @param[inout] Data Pointer to input data
  * @param[in] Pattern Pattern to be set
  * @param[in] Mask Mask value
+ * 
+ * @reqs    SWS_Bfx_00120, SWS_Bfx_00124
  */
 void Bfx_PutBitsMask_u32u32u32( uint32 *Data, uint32 Pattern, uint32 Mask )
 {
@@ -477,6 +520,8 @@ void Bfx_PutBitsMask_u32u32u32( uint32 *Data, uint32 Pattern, uint32 Mask )
  * @param[inout] Data Pointer to destination data
  * @param[in] BitPn Destination position
  * @param[in] Status Source data
+ * 
+ * @reqs    SWS_Bfx_00130, SWS_Bfx_00132
  */
 void Bfx_PutBit_u32u8u8( uint32 *Data, uint8 BitPn, boolean Status )
 {
@@ -614,6 +659,8 @@ static inline uint32 Bfx_ShiftBitSat_u32s8_u32( uint32 Data, sint8 ShiftCnt )
  * @param[in] Data Input data
  *
  * @retval Bit position
+ * 
+ * @reqs    SWS_Bfx_91003, SWS_Bfx_00137
  */
 uint8 Bfx_CountLeadingOnes_u32( uint32 Data )
 {
@@ -645,6 +692,8 @@ uint8 Bfx_CountLeadingOnes_u32( uint32 Data )
  * @param[in] Data Input data
  *
  * @retval Bit position
+ * 
+ * @reqs    SWS_Bfx_91004, SWS_Bfx_00139
  */
 uint8 Bfx_CountLeadingSigns_s32( sint32 Data )
 {
@@ -677,6 +726,8 @@ uint8 Bfx_CountLeadingSigns_s32( sint32 Data )
  * @param[in] Data Input data
  *
  * @retval Bit position
+ * 
+ * @reqs    SWS_Bfx_91005, SWS_Bfx_00141
  */
 uint8 Bfx_CountLeadingZeros_u32( uint32 Data )
 {
@@ -691,3 +742,5 @@ uint8 Bfx_CountLeadingZeros_u32( uint32 Data )
 
     return Count;
 }
+
+#endif /* BFX_32BITS_H */

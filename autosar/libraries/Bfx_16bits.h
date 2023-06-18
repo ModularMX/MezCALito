@@ -12,6 +12,9 @@
  * @reqs    SWS_Bfx_00223, SWS_Bfx_00203, SWS_Bfx_00205, SWS_Bfx_00206, SWS_Bfx_00207, SWS_Bfx_00208
  *          SWS_Bfx_00209, SWS_Bfx_00212, SWS_Bfx_00213, SWS_Bfx_00214,
  */
+#ifndef BFX_16BITS_H
+#define BFX_16BITS_H
+
 #include "Std_Types.h"
 
 /**
@@ -739,3 +742,5 @@ static inline uint8 Bfx_CountLeadingZeros_u16( uint8 Data )
 
     return Count;
 }
+
+#endif /* BFX_16BITS_H */

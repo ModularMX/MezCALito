@@ -659,7 +659,7 @@ void test__Bfx_CountLeadingOnes_u8__3ones( void )
 {
     uint8 Ones;
     Ones = Bfx_CountLeadingOnes_u8( 0xE6 );
-    TEST_ASSERT_EQUAL_HEX8_MESSAGE( 3, Ones, "Value is not 3 as supposed to be" );
+    TEST_ASSERT_EQUAL_MESSAGE( 3, Ones, "Value is not 3 as supposed to be" );
 }
 
 /**
@@ -674,7 +674,7 @@ void test__Bfx_CountLeadingSigns_s8__2ones( void )
 {
     uint8 Bits;
     Bits = Bfx_CountLeadingSigns_s8( 0xE6 );
-    TEST_ASSERT_EQUAL_HEX8_MESSAGE( 2, Bits, "Value is not 2 as supposed to be" );
+    TEST_ASSERT_EQUAL_MESSAGE( 2, Bits, "Value is not 2 as supposed to be" );
 }
 
 /**
@@ -689,7 +689,7 @@ void test__Bfx_CountLeadingSigns_s8__4zeroes( void )
 {
     uint8 Bits;
     Bits = Bfx_CountLeadingSigns_s8( 0x06 );
-    TEST_ASSERT_EQUAL_HEX8_MESSAGE( 4, Bits, "Value is not 4 as supposed to be" );
+    TEST_ASSERT_EQUAL_MESSAGE( 4, Bits, "Value is not 4 as supposed to be" );
 }
 
 /**
@@ -704,5 +704,5 @@ void test__Bfx_CountLeadingZeros_u8__3zeroes( void )
 {
     uint8 Zeroes;
     Zeroes = Bfx_CountLeadingZeros_u8( 0x16 );
-    TEST_ASSERT_EQUAL_HEX8_MESSAGE( 3, Zeroes, "Value is not 3 as supposed to be" );
+    TEST_ASSERT_EQUAL_MESSAGE( 3, Zeroes, "Value is not 3 as supposed to be" );
 }

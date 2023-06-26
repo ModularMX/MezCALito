@@ -12,3 +12,4 @@ AUTOSAR requirements
     requirements/specification-of-standard-types
     requirements/requirements-on-libraries
     requirements/specification-of-bit-handling-routines
+    requirements/requirements-on-port-driver

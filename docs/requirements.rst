@@ -14,3 +14,4 @@ AUTOSAR requirements
     requirements/specification-of-bit-handling-routines
     requirements/requirements-on-port-driver
     requirements/general-requirements-on-spal
+    requirements/specification-on-port-driver

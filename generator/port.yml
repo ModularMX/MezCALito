@@ -1,0 +1,40 @@
+PortConfigSet:
+
+  PortContainer_0:
+    PortNumber: porta
+    PortNumberOfPortPins: 5
+    
+    PortPin_1:
+      PortPinId: 1
+      PortPinSymbolicName: PORT_1_PIN_3
+      PortPinDirection: input
+      PortPinDirectionChangeable: false
+      PortPinInitialMode: gpio
+      PortPinMode: gpio
+      PortPinLevelValue: low
+      PortPinModeChangeable: false
+      PortPinInputPullResistor: nopull
+      PortPinOutputPinDriveMode: pushpull
+      PortPinOutputSpeedMode: low
+
+  PortContainer_1:
+    PortNumber: portb
+    PortNumberOfPortPins: 5
+    PortPin_1:
+      PortPinId: 1
+      PortPinSymbolicName: PORT_1_PIN_3
+      PortPinDirection: input
+      PortPinDirectionChangeable: false
+      PortPinInitialMode: gpio
+      PortPinMode: gpio
+      PortPinLevelValue: low
+      PortPinModeChangeable: false
+      PortPinInputPullResistor: nopull
+      PortPinOutputPinDriveMode: pushpull
+      
+PortGeneral:
+  PortDevErrorDetect: false
+  PortSetPinDirectionApi: false
+  PortSetPinModeApi: false
+  PortVersionInfoApi: false
+    

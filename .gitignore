@@ -1,2 +1,5 @@
 #Output c files
 build/
+generator/__pycache__/
+generator/.pytest_cache/
+cfg/

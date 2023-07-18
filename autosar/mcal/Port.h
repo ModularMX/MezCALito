@@ -16,10 +16,20 @@
 /**
  * @defgroup PORT_modes GPIO Configuration Modes
  * @{ */
-#define PORT_MODE_INPUT           0x00u /*!< Low speed       */
-#define PORT_MODE_OUTPUT          0x01u /*!< Medium speed    */
-#define PORT_MODE_ALTERN          0x02u /*!< High speed      */
-#define PORT_MODE_ANALOG          0x03u /*!< Very high speed */
+#define PORT_MODE_INPUT               0x00u /*!< Low speed       */
+#define PORT_MODE_OUTPUT              0x10u /*!< Medium speed    */
+#define PORT_MODE_ANALOG              0x30u /*!< Very high speed */
+#define PORT_MODE_ALT0                0x20u /*!< Alternate Function 0 selected       */
+#define PORT_MODE_ALT1                0x21u /*!< Alternate Function 1 selected       */
+#define PORT_MODE_ALT2                0x22u /*!< Alternate Function 2 selected       */
+#define PORT_MODE_ALT3                0x23u /*!< Alternate Function 3 selected       */
+#define PORT_MODE_ALT4                0x24u /*!< Alternate Function 4 selected       */
+#define PORT_MODE_ALT5                0x25u /*!< Alternate Function 5 selected       */
+#define PORT_MODE_ALT6                0x26u /*!< Alternate Function 6 selected       */
+#define PORT_MODE_ALT7                0x27u /*!< Alternate Function 7 selected       */
+#define PORT_MODE_ALT8                0x28u /*!< Alternate Function 8 selected       */
+#define PORT_MODE_ALT9                0x29u /*!< Alternate Function 9 selected       */
+#define PORT_MODE_ALT10               0x2Au /*!< Alternate Function 10 selected      */
 /**
  * @} */
 
@@ -27,10 +37,10 @@
 /**
  * @defgroup PORT_speed GPIO Speed Frequencies
  * @{ */
-#define PORT_SPEED_FREQ_LOW       0x00u /*!< Low speed       */
-#define PORT_SPEED_FREQ_MEDIUM    0x01u /*!< Medium speed    */
-#define PORT_SPEED_FREQ_HIGH      0x02u /*!< High speed      */
-#define PORT_SPEED_FREQ_VERY_HIGH 0x03u /*!< Very high speed */
+#define PORT_SPEED_FREQ_LOW           0x00u /*!< Low speed       */
+#define PORT_SPEED_FREQ_MEDIUM        0x01u /*!< Medium speed    */
+#define PORT_SPEED_FREQ_HIGH          0x02u /*!< High speed      */
+#define PORT_SPEED_FREQ_VERY_HIGH     0x03u /*!< Very high speed */
 /**
  * @} */
 
@@ -38,38 +48,32 @@
 /**
  * @defgroup PORT_pull Pull-Up or Pull-Down Activation
  * @{ */
-#define PORT_RESISTOR_NOPULL      0x00u /*!< No Pull-up or Pull-down activation  */
-#define PORT_RESISTOR_PULLUP      0x01u /*!< Pull-up activation                  */
-#define PORT_RESISTOR_PULLDOWN    0x02u /*!< Pull-down activation                */
+#define PORT_RESISTOR_NOPULL          0x00u /*!< No Pull-up or Pull-down activation  */
+#define PORT_RESISTOR_PULLUP          0x01u /*!< Pull-up activation                  */
+#define PORT_RESISTOR_PULLDOWN        0x02u /*!< Pull-down activation                */
 /**
  * @} */
 
 /**
  * @defgroup PORT_drive Drive output Push-Pull or Open collector
  * @{ */
-#define PORT_PUSH_PULL            0x00u /*!< No Pull-up or Pull-down activation  */
-#define PORT_OPEN_COLECTOR        0x01u /*!< Pull-up activation                  */
+#define PORT_PUSH_PULL                0x00u /*!< No Pull-up or Pull-down activation  */
+#define PORT_OPEN_COLECTOR            0x01u /*!< Pull-up activation                  */
 /**
  * @} */
 
-
 /**
- * @defgroup PORT_alt Alternate Function
+ * @defgroup PORT_errors PORT Driver Errors
  * @{ */
-#define PORT_ALT_F0               0x00u /*!< Alternate Function 0 selected       */
-#define PORT_ALT_F1               0x01u /*!< Alternate Function 1 selected       */
-#define PORT_ALT_F2               0x02u /*!< Alternate Function 2 selected       */
-#define PORT_ALT_F3               0x03u /*!< Alternate Function 3 selected       */
-#define PORT_ALT_F4               0x04u /*!< Alternate Function 4 selected       */
-#define PORT_ALT_F5               0x05u /*!< Alternate Function 5 selected       */
-#define PORT_ALT_F6               0x06u /*!< Alternate Function 6 selected       */
-#define PORT_ALT_F7               0x07u /*!< Alternate Function 7 selected       */
-#define PORT_ALT_F8               0x08u /*!< Alternate Function 8 selected       */
-#define PORT_ALT_F9               0x09u /*!< Alternate Function 9 selected       */
-#define PORT_ALT_F10              0x0Au /*!< Alternate Function 10 selected      */
+#define PORT_E_PARAM_PIN              0x0Au /*!< Invalid Port Pin ID requested        */
+#define PORT_E_DIRECTION_UNCHANGEABLE 0x0Bu /*!< Port Pin not configured as changeable */
+#define PORT_E_INIT_FAILED            0x0Cu /*!< Invalid configuration set            */
+#define PORT_E_PARAM_INVALID_MODE     0x0Du /*!< Invalid Port Pin mode specified      */
+#define PORT_E_MODE_UNCHANGEABLE      0x0Eu /*!< Port Pin mode is not configurable    */
+#define PORT_E_UNINIT                 0x0Fu /*!< Port driver not initialized          */
+#define PORT_E_PARAM_POINTER          0x10u /*!< Invalid Port Pin ID requested        */
 /**
  * @} */
-
 
 /**
  * @brief   Data type for the symbolic name of a port pin.

@@ -1,11 +1,12 @@
 #include "Std_Types.h"
+#include "Port.h"
 
 int main( void )
 {
     /*enable GPIOA clock*/
     *(volatile uint32 *)0x40021034 |= 0x01;
-    /*Set pin 5 from port A as output*/
-    *(volatile uint32 *)0x50000000 &= ~( 2 << ( 5 << 1 ) );
+    /*Init all ports*/
+    Port_Init( &PortConfig );
 
     for( ;; ) /*infinite loop*/
     {

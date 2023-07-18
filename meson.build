@@ -22,6 +22,8 @@ c_link_args = []
 srcs = files(
     'main.c',
     'startup.c',
+    'autosar/mcal/Port.c',
+    'cfg/Port_Cfg.c'
 )
 
 # project linker file
@@ -38,7 +40,9 @@ main = executable( name,
         ],
     include_directories : [ 
         'autosar',
-        'autosar/mcal'
+        'autosar/libraries',
+        'autosar/mcal',
+        'cfg'
     ]
 )
 
